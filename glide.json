@@ -1,9 +1,8 @@
-
 [
   {
     "kind": "column",
-    "name": "OpenAI (Assistants)",
-    "description": "Create, modify and run OpenAI Assistants.",
+    "name": "Upload OpenAI File",
+    "description": "Upload a file to OpenAI's API, with a specified purpose.",
     "author": "Gavin Horne <gavin@thinknetwork.com.au>",
     "params": [
       {
@@ -12,18 +11,13 @@
         "type": "string"
       },
       {
-        "name": "endpoint",
-        "displayName": "API Endpoint (Required)",
-        "type": "string"
+        "name": "file",
+        "displayName": "File (Required, Multipart)",
+        "type": "file"
       },
       {
-        "name": "body",
-        "displayName": "Body (JSON Schema Required)",
-        "type": "string"
-      },
-      {
-        "name": "json",
-        "displayName": "JSON Schema (Output)",
+        "name": "purpose",
+        "displayName": "Purpose (Required, e.g., fine-tune, assistants)",
         "type": "string"
       }
     ],
